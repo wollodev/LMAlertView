@@ -339,7 +339,7 @@
 	frame.size = size;
 	
 	self.representationView.frame = frame;
-    self.representationView.center = CGPointMake([[UIScreen mainScreen] bounds].size.width / 2.0, [[UIScreen mainScreen] bounds].size.height / 2.0);
+    self.representationView.center = CGPointMake([[UIScreen mainScreen] bounds].size.width / 2.0, [[UIScreen mainScreen] bounds].size.height / 3.0);
 }
 
 - (CGSize)size
