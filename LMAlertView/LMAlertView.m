@@ -77,7 +77,17 @@
 		
 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     }
+    
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeModalView)];
+    
+    [self.backgroundView addGestureRecognizer:tapGestureRecognizer];
+    
     return self;
+}
+
+- (void)closeModalView
+{
+    [self dismissWithClickedButtonIndex:0 animated:YES];
 }
 
 - (void)keyboardWillShow:(NSNotification *)notification
