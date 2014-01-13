@@ -326,7 +326,7 @@
 	}
 	else {
 		self.representationView.layer.anchorPoint = CGPointMake(0.5, 0.5);
-		self.representationView.center = CGPointMake([[UIScreen mainScreen] bounds].size.width / 2.0, [[UIScreen mainScreen] bounds].size.height / 2.0);
+		self.representationView.center = CGPointMake([[UIScreen mainScreen] bounds].size.width / 2.0, [[UIScreen mainScreen] bounds].size.height / 3.0);
 	}
 	
 	[self.representationView.layer addAnimation:animation forKey:@"bounds"];
