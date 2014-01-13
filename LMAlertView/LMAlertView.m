@@ -361,7 +361,7 @@
 	[_alertContainerView addSubview:_backgroundView];
 	
 	_representationView = [[UIView alloc] initWithFrame:(CGRect){.size = size}];
-    _representationView.center = CGPointMake(screenSize.width / 2.0, screenSize.height / 2.0);
+    _representationView.center = CGPointMake(screenSize.width / 2.0, screenSize.height / 3.0);
 	
 	_representationView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
 	[_representationView.layer setMasksToBounds:YES];
